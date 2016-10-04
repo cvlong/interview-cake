@@ -10,7 +10,6 @@ yesterday.
 
 No "shorting" - you must buy before you sell. You may not buy and sell in the
 same time step (at least 1 minute must pass).
-
 """
 
 # Brute force: try every combination of prices and keep track of the max diff
@@ -20,7 +19,6 @@ def get_max_profit(prices):
 
     >>> get_max_profit([10, 7, 5, 8, 11, 9])
     6
-
     """
 
     max_profit = 0
@@ -57,7 +55,6 @@ def get_max_profit2(prices):
 
     >>> get_max_profit2([10, 7, 5, 8, 11, 9])
     6
-
     """
 
     # keep track of variables and update as we iterate through the problem
@@ -103,7 +100,6 @@ def get_max_profit3(prices):
     Traceback (most recent call last):
         ...
     IndexError: Getting a profit requires at least 2 prices
-
     """
 
     # make sure we have at least 2 prices
