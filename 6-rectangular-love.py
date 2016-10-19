@@ -45,43 +45,42 @@ def find_intersection(recA, recB):
     ... 'height': 3,
     ... }
 
-    >>> find_intersection(recA, recB)
-    {'width': 1, 'left_x': 3, 'bottom_y': 2, 'height': 3}
-    
-    >>> rectA = {
+    >>> find_intersection(recA, recB) == {'width': 1, 'left_x': 3, 'bottom_y': 2, 'height': 3}
+    True
+
+    >>> recA = {
     ...     'left_x': 1,
     ...     'bottom_y': 1,
     ...     'width': 4,
     ...     'height': 3
     ...     }
     
-    >>> rectB = {
+    >>> recB = {
     ...     'left_x': 3,
     ...     'bottom_y': 3,
     ...     'width': 5,
     ...     'height': 4
     ...     }
     
-    >>> find_intersection(rectA, rectB)
-    {'width': 2, 'left_x': 3, 'bottom_y': 3, 'height': 1}
+    >>> find_intersection(recA, recB) == {'width': 2, 'left_x': 3, 'bottom_y': 3, 'height': 1}
+    True
 
-    >>> rectA = {
+    >>> recA = {
     ...     'left_x': 1,
     ...     'bottom_y': 1,
     ...     'width': 4,
     ...     'height': 3
     ...     }
     
-    >>> rectB = {
+    >>> recB = {
     ...     'left_x': 6,
     ...     'bottom_y': 8,
     ...     'width': 5,
     ...     'height': 4
     ...     }
     
-    >>> find_intersection(rectA, rectB) is None
+    >>> find_intersection(recA, recB) is None
     True
-
     """
 
     # initialize empty dict for results rectangle
